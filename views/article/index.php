@@ -1,12 +1,14 @@
-<h1>Article</h1>
+<?php
+    $title="Accueil";
+    ?>
+    <h2>Articles des étudiants</h2>
         <table>
             <thead>
                 <tr>
                     <th>Titre</th>
                     <th>Texte</th>
                     <th>Auteur</th>
-                    <th>Date de rédaction</th>
-                    <th>Article complet</th>
+                    <th>Rédaction</th>
                 </tr>
             </thead>
             <tbody>
@@ -14,11 +16,10 @@
                 foreach($data as $row){
                 ?>
                 <tr>
-                    <td><?= $row['title'];?></td>
-                    <td><?= $row['text'];?></td>
-                    <td><?= $row['Nom Auteur'];?></td>
+                    <td class="grasLeger"><?= $row['title'];?></td>
+                    <td><?= $row['Intro'];?>  <a class="bleu" href="?controller=article&function=show&articleID=<?= $row['articleID'];?>">Voir l'article</a></td>
+                    <td class="centre"><?= $row['prenom'] . ' ' . $row['nom'];?></td>
                     <td><?= $row['Date de rédaction'];?></td>
-                    <td><a href="?controller=article&function=show&id=<?= $row['id'];?>">Voir l'article</a></td>
                 </tr>
                 <?php
                 }

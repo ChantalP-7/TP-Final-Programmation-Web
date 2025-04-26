@@ -1,15 +1,11 @@
 <?php
-
-?>
+    $title="Bonne lecture 📚☕";
+    ?>
 <div class="div-article-unique">
-    <h3>Un article</h3>
-    <p><strong>Titre : </strong> <?= $data['title'];?></p>
-    <p><strong>texte: </strong> <?= $data['text'];?></p>
-    <p><em><strong>Auteur: </strong> <?= $data['name'];?></em></p>
-    <p><strong>Rédaction: </strong> <?= $data['drafting_date'];?></p>
-    <a href="?controller=article&function=edit&=<?= $data['id']?>" class="btn">Éditer</a>
-    <form action="?controller=article&function=delete" method="post">
-        <input type="hidden" name="id" value="<?= $data['id'];?>">
-        <input type="submit" value="Supprimer" class="btn-danger">
-    </form>
+    <p><h3><?= $data['title'];?></h3></p>
+    <p>Auteur: <?= $data['prenom'] . ' '. $data['nom'] ;?></p>
+    <p><em><strong>Rédaction: </strong> <?= $data['creation_date'];?></em></p>
+    <p><strong></strong> <?= $data['text'];?></p>    
+    <p><a class="bleu" href="index.php">Retour aux articles</a></p>
+    <br>
 </div>

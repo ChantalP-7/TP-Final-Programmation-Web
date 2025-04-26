@@ -1,15 +1,18 @@
+<?php
+    $title="Mise à jour article";
+    session_start()
+    ?>
+<h2 class="centre">Mon article</h2>
 
-<h1>Mon article</h1>
-    <form action="?controller=article&function=edit" method="post">
-        <input type="hidden" name="id" value="<?= $data['article']['id']; ?>">
+    <div class="div-form-texte">
+    <form action="?controller=article&function=update" method="post">
+        <input type="hidden" name="articleID" value="<?= $data['articleID']; ?>">
         <label for="name">Titre</label>
-        <input type="text" id="title" name="title" value="<?= $data['article']['title'];?>">
-        <label for="address">Texte</label>
-        <textarea  cols="85%" rows="10" placeholder="Mon article" id="text" name="text" value="<?= $data['article']['text'];?>">
-        <label for="phone">Date</label>
-        <input type="date" id="date" name="date" value="<?= $data['article']['drafting_date'];?>">
-        <label for="city">Auteur</label>
-        <input type="texte" id="name" name="name" value="<?= $data['author']['name'];?>">        
-        <input type="submit" value="Update" class="btn">
+        <input type="text" id="title" name="title" value="<?= $data['title'];?>">
+        <label for="address">Texte</label>        
+        <textarea cols="80%" rows="10" id="text" name="text"><?= $data['text'];?></textarea>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="creation_date" value="<?= $data['creation_date'];?>">       
+        <input type="submit" value="Soumettre" class="bouton">
     </form>
-
+</div>
