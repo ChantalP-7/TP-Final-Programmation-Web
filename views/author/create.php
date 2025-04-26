@@ -1,10 +1,16 @@
-<h1>Inscription</h1>
+<?php
+    $title="Inscription";
+?>
+<h2 class="centre">Inscription</h2>
 <form action="?controller=author&function=insert" method="post">
-    <label for="name">Name</label>
+    <label for="firstName">Prénom</label>
+    <input type="text" minlength="2" maxlength="25" name="firstName" id="firstName" required>
+    <label for="name">Nom</label>
     <input type="text" minlength="2" maxlength="25" name="name" id="name" required>
-    <label for="username">Username</label>
+    <label for="username">Utilisateur (courriel)</label>
     <input type="text" minlength="2" maxlength="25" name="username" id="username" required>
-    <label for="password">Password</label>
+    <label for="password">Mot de passe (min 6 caractères)</label>
     <input type="password" minlength="6" maxlength="20" name="password" id="password" required> 
-    <input type="submit"  class="btn" value="Save">        
+    <br>
+    <input type="submit" class="centre bouton" value="Sauvegarder">        
 </form>

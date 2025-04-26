@@ -1,7 +1,10 @@
+<?php
+    $title="Mon profil";
+    
+    ?>
 
-<div class="div-article-unique">
- <h1>Bonjour <?= $author['name'];?></h1>
-    <p><strong>Nom: </strong> <?= $data['name'];?></p>
-    <p><strong>Username: </strong> <?= $data['Username'];?></p>    
-    <a href="?controller=author&function=show&id=<?= $author['id']?>" class="btn">Edit</a>
+<div class="div-centree">
+    <h2 class="centre">Bonjour <?= $data['firstName'];?></h2>
+    <h3 class="centre">Tu peux modifier ton profil</h3>
+    <a class="bouton" href="?controller=author&function=edit&authorID=<?= $data['authorID']?>">Modifier mon Profil</a>
 </div>
