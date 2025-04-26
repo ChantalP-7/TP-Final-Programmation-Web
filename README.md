@@ -18,4 +18,5 @@ Objectifs:
 9. Selon les enseignements reçus, le travail a été fait en MVC modulaire avec vues, controlleur et modèle. Les requêtes squl ont été mises dans le fichier models, le vues on été séparées dans deux fichiers, author et articles qui ont été mis dans le dossier layout. La page principale index servait de contrôleur des fichiers controllers d'author, article et base.
 10. Des sécurités ont été mises en place pour empêcher les injections sql et permettre de contrôler les données et le volume : safe Addslaches, mysqli_real_escape_string, s'assurer que les données sont bien du type attendu, password_verify pour le mot de passe et des balises dans les formulaires, etc.
 11. Les variables session ont été utilisées pour permettre à la personne authentifiée d'avoir accès à ses articles et son profil.
+12. Oups, j'ai oublié le très important, les mots de passe sont encrpyté dans la base de données avec la fonction password_hash, 'cost' => 10....
 
