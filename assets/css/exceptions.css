@@ -1,0 +1,66 @@
+.conteneur {
+    display: flex;    
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    position: relative;
+    max-width: 1100px;
+    min-height: 100%;
+}
+
+.separation {
+    max-width: 1000px;
+    border-bottom: 5px solid var(--jade);
+}
+
+.bleu {
+    color: blue;
+    text-decoration: underline;
+}
+
+p>.bleu {
+    margin-left: -10px;
+}
+
+.article {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.article > *+* {
+    margin-top: 20px;
+}
+
+.rangee-boutons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 20px;
+}
+
+.rangee-boutons {
+    margin-top: 50px;
+}
+
+.danger:hover {
+    background-color: grey;
+    color: var(--blanc);
+}
+
+.texte-erreur{
+    color: var(--tomate);    
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.centre {
+    text-align: center;
+}
+
+.grasLeger {
+    font-weight: var(--grasLeger)
+}
+
+

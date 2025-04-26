@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Playwrite+CL+Guides&display=swap');@import url('https://fonts.googleapis.com/css2?family=Playwrite+CL+Guides&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=News+Cycle:wght@400;700&family=Playwrite+CL+Guides&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mohave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
 
 :root {
 
@@ -9,16 +10,21 @@
 --bleuMarin: rgb(11, 35, 114);
 --jade: rgb(23, 123, 153);
 --grisPale: rgba(255, 255, 255, 0.541);
---grisMoyen: rgb(97, 97, 97);
+--grisFonce: rgb(82, 82, 82);
 --charbon: rgb(24, 24, 24);
---bleuPrincipal: rgb(131, 152, 196);
 --boxShadow: rgba(197, 197, 197, 0.699);
 --blanc: white;
---vert: rgb(99, 197, 42);
+--vert: rgb(86, 179, 63);
+--tomate: rgba(255, 33, 25, 0.92);
 
 /* Typographie */
 
---newsCycle: "News cycle";
---amita: "amita";
-
+--mohave: "Mohave";
+--barlow: "Barlow";
+--h1: 40px;
+--h2: 26px;
+--h3: 24px;
+--h4: 22px;
+--p: 18px;
+--grasLeger: 600;
 }

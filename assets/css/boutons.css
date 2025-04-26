@@ -1,0 +1,25 @@
+.bouton {
+    background-color: var(--jade);
+    color: var(--blanc);
+    padding: 5px 16px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+}
+
+.bouton:hover {
+    background-color: var(--vert);
+    color: var(--blanc);
+}
+
+.bouton.danger {
+    background-color: var(--tomate);
+    color: var(--blanc);
+}
+
+.boutons-centres {
+    margin: 50px auto;
+    display: flex;
+    gap: 50px;
+    align-items: center
+}

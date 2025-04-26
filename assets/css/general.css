@@ -3,15 +3,17 @@
     padding: 0;
 }
 
-html {
-    font-family: verdana;
-}
-
 body {
     min-height: 100vh;
+}
+
+
+html {
+    font-family: var(--barlow);
 }
 
 a {
     color: inherit;
     text-decoration: none;
 }
+

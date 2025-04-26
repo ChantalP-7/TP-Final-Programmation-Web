@@ -85,8 +85,8 @@ function author_controller_auth($request){
     $data = author_auth($username, $password);
     if($data){
         //$id = $request['id'];
-        return render('author/pageProtegee.php', $data);
-        //header('location:?controller=author&function=show', $data);
+        //return render('author/pageProtegee.php', $data);
+        header('location:?controller=article&function=index');
         print_r($data);
     }else{
         echo "La connexion fonctionne pas 😫";

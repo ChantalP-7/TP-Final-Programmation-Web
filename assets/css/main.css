@@ -1,3 +1,5 @@
-@import "general.css";
-@import "langage.css";
-@import "style.php";
+@import "/assets/css/general.css";
+@import "/assets/css/langage.css";
+@import "/assets/css/exceptions.css";
+@import "/assets/css/div.css";
+@import "/assets/css/bouton.css";
